@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenomics - Serpo Coin</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-dark">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top cosmic-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.svg" alt="Serpo Coin" class="logo-img me-2" onerror="this.onerror=null; this.src='assets/images/logo.png';">
+                <span class="brand-text">SERPO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html">Vision</a></li>
+                    <li class="nav-item"><a class="nav-link" href="utilities.html">Utilities</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tokenomics.html">Tokenomics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="roadmap.html">Roadmap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-gradient ms-3">Buy SERPO</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="stars-bg"></div>
+        <div class="container">
+            <div class="row min-vh-50 align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-2 fw-bold gradient-text mb-3" data-aos="fade-up">
+                        <i class="fas fa-coins me-3"></i>Tokenomics
+                    </h1>
+                    <p class="lead text-cyan" data-aos="fade-up" data-aos-delay="200">
+                        Token Economy Built for Sustainability and Growth
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tokenomics-section py-5">
+        <div class="container">
+            
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="token-info-card" data-aos="fade-up">
+                        <h2 class="gradient-text text-center mb-5">Token Details</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="token-stat-box">
+                                    <div class="icon-wrapper mb-3">
+                                        <i class="fas fa-tag"></i>
+                                    </div>
+                                    <h5 class="text-cyan mb-2">Token Name</h5>
+                                    <p class="h4 mb-0">Serpo Coin</p>
+                                    <p class="text-light small mt-2">Ticker: SERPO</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="token-stat-box">
+                                    <div class="icon-wrapper mb-3">
+                                        <i class="fas fa-layer-group"></i>
+                                    </div>
+                                    <h5 class="text-yellow mb-2">Total Supply</h5>
+                                    <p class="h4 mb-0">1,000,000,000</p>
+                                    <p class="text-light small mt-2">Fixed & Deflationary</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="token-stat-box">
+                                    <div class="icon-wrapper mb-3">
+                                        <i class="fab fa-telegram"></i>
+                                    </div>
+                                    <h5 class="text-cyan mb-2">Network</h5>
+                                    <p class="h4 mb-0">TON</p>
+                                    <p class="text-light small mt-2">The Open Network</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="token-stat-box">
+                                    <div class="icon-wrapper mb-3">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <h5 class="text-yellow mb-2">Launchpad</h5>
+                                    <p class="h4 mb-0">Blum Meme Pad</p>
+                                    <p class="text-light small mt-2">Fair Launch</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="distribution-card" data-aos="fade-up">
+                        <h2 class="gradient-text text-center mb-5">Token Distribution</h2>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <canvas id="tokenomicsChart"></canvas>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="distribution-list">
+                                    <div class="distribution-item">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="fw-bold">
+                                                <i class="fas fa-users text-cyan me-2"></i>Community & Airdrops
+                                            </span>
+                                            <span class="badge bg-cyan">40%</span>
+                                        </div>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-cyan" style="width: 40%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="distribution-item">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="fw-bold">
+                                                <i class="fas fa-water text-yellow me-2"></i>Liquidity & Staking
+                                            </span>
+                                            <span class="badge bg-yellow">30%</span>
+                                        </div>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-yellow" style="width: 30%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="distribution-item">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="fw-bold">
+                                                <i class="fas fa-handshake text-blue me-2"></i>Partnerships & Merchants
+                                            </span>
+                                            <span class="badge bg-blue">15%</span>
+                                        </div>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar" style="width: 15%; background: #4169e1;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="distribution-item">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="fw-bold">
+                                                <i class="fas fa-tools text-orange me-2"></i>Ecosystem Development
+                                            </span>
+                                            <span class="badge" style="background: #ff6b35;">15%</span>
+                                        </div>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar" style="width: 15%; background: #ff6b35;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="features-grid" data-aos="fade-up">
+                        <h2 class="gradient-text text-center mb-5">Key Features</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="feature-highlight">
+                                    <i class="fas fa-user-shield text-cyan"></i>
+                                    <h4>Renounced Contract</h4>
+                                    <p>100% community-owned. No centralized control, no owner privileges.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-highlight">
+                                    <i class="fas fa-ban text-yellow"></i>
+                                    <h4>No Inflation</h4>
+                                    <p>Fixed supply of 1 billion tokens. No minting, no dilution.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-highlight">
+                                    <i class="fas fa-fire text-orange"></i>
+                                    <h4>Deflationary</h4>
+                                    <p>Token burns and buybacks reduce circulating supply over time.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-highlight">
+                                    <i class="fas fa-shield-alt text-blue"></i>
+                                    <h4>Audited & Secure</h4>
+                                    <p>Smart contract audited by top security firms for your safety.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="cta-box" data-aos="zoom-in">
+                        <h3 class="mb-4">Ready to Join Serpo?</h3>
+                        <p class="lead mb-4">Get SERPO tokens now on Blum Meme Pad</p>
+                        <div>
+                            <a href="#" class="btn btn-gradient btn-lg me-3 mb-3">
+                                <i class="fas fa-shopping-cart me-2"></i>Buy on Blum Meme Pad
+                            </a>
+                            <a href="#" class="btn btn-outline-light btn-lg mb-3">
+                                <i class="fas fa-file-pdf me-2"></i>Download Whitepaper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="cosmic-footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand mb-3">
+                        <img src="assets/images/logo.png" alt="Serpo Coin" class="footer-logo me-2">
+                        <span class="brand-text">SERPO COIN</span>
+                    </div>
+                    <p class="text-light">A cosmic legend reborn in Web3. Building a self-evolving digital civilization on the TON network.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="text-cyan mb-3">Explore</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="utilities.html">Utilities</a></li>
+                        <li><a href="tokenomics.html">Tokenomics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="text-cyan mb-3">Community</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Whitepaper</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="text-cyan mb-3">Connect With Us</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+                    </div>
+                    <p class="small text-light mb-0">Join our cosmic community and help build the future of Web3.</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-light">&copy; 2025 Serpo Coin. A signal from the stars, reborn through the blockchain.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tokenomics-chart.js"></script>
+</body>
+</html>

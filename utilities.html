@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Utilities - Serpo Coin</title>
+    <meta name="description" content="Explore Serpo Coin's core utilities: Serpo Wallet, SerpoVerse, DAO Governance, Cross-Chain Portal, and more.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-dark">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top cosmic-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.svg" alt="Serpo Coin" class="logo-img me-2" onerror="this.onerror=null; this.src='assets/images/logo.png';">
+                <span class="brand-text">SERPO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html">Vision</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="utilities.html">Utilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tokenomics.html">Tokenomics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="roadmap.html">Roadmap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-gradient ms-3">Buy SERPO</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="stars-bg"></div>
+        <div class="container">
+            <div class="row min-vh-50 align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-2 fw-bold gradient-text mb-3" data-aos="fade-up">
+                        <i class="fas fa-toolbox me-3"></i>
+                        Core Utilities
+                    </h1>
+                    <p class="lead text-cyan" data-aos="fade-up" data-aos-delay="200">
+                        Building a Functional Ecosystem with Real-World Value
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Utilities Navigation Tabs -->
+    <section class="utilities-nav-section py-4">
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center utility-tabs" id="utilityTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="wallet-tab" data-bs-toggle="pill" data-bs-target="#wallet" type="button" role="tab">
+                        <i class="fas fa-wallet me-2"></i>Serpo Wallet
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="serpoverse-tab" data-bs-toggle="pill" data-bs-target="#serpoverse" type="button" role="tab">
+                        <i class="fas fa-cube me-2"></i>SerpoVerse
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="dao-tab" data-bs-toggle="pill" data-bs-target="#dao" type="button" role="tab">
+                        <i class="fas fa-vote-yea me-2"></i>DAO
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="portal-tab" data-bs-toggle="pill" data-bs-target="#portal" type="button" role="tab">
+                        <i class="fas fa-portal-enter me-2"></i>Portal
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="partnerships-tab" data-bs-toggle="pill" data-bs-target="#partnerships" type="button" role="tab">
+                        <i class="fas fa-handshake me-2"></i>Partnerships
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="fund-tab" data-bs-toggle="pill" data-bs-target="#fund" type="button" role="tab">
+                        <i class="fas fa-lightbulb me-2"></i>Creation Fund
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Utilities Content -->
+    <section class="utilities-content py-5">
+        <div class="container">
+            <div class="tab-content" id="utilityTabsContent">
+                
+                <!-- Serpo Wallet -->
+                <div class="tab-pane fade show active" id="wallet" role="tabpanel">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="utility-image-wrapper">
+                                <div class="glow-effect-large"></div>
+                                <i class="fas fa-wallet utility-icon-large"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <h2 class="gradient-text mb-4">
+                                <i class="fas fa-wallet me-2"></i>Serpo Wallet
+                            </h2>
+                            <p class="lead mb-4">
+                                A P2P gamified wallet for crypto ↔ fiat trading, staking, and earning energy-based rewards.
+                            </p>
+                            <p class="mb-4">
+                                Serpo Wallet gives users full control over their assets while engaging them through 
+                                a rank and reward system that grows with their activity.
+                            </p>
+                            
+                            <div class="feature-list mb-4">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>P2P Trading:</strong> Direct crypto-to-fiat exchanges</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Staking Rewards:</strong> Earn passive income on holdings</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Energy System:</strong> Gamified ranking and rewards</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Multi-Chain Support:</strong> Manage assets across networks</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Secure & Non-Custodial:</strong> You own your keys</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-gradient">
+                                <i class="fas fa-download me-2"></i>Coming Soon
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SerpoVerse -->
+                <div class="tab-pane fade" id="serpoverse" role="tabpanel">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                            <div class="utility-image-wrapper">
+                                <div class="glow-effect-large"></div>
+                                <i class="fas fa-cube utility-icon-large"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                            <h2 class="gradient-text mb-4">
+                                <i class="fas fa-cube me-2"></i>SerpoVerse
+                            </h2>
+                            <p class="lead mb-4">
+                                A 3D digital colony where Serpo citizens interact, trade NFTs, explore, 
+                                and express creativity through immersive experiences.
+                            </p>
+                            <p class="mb-4">
+                                Enter a fully realized metaverse inspired by the planet Serpo — a place where 
+                                imagination meets blockchain technology.
+                            </p>
+                            
+                            <div class="feature-list mb-4">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>3D Exploration:</strong> Navigate stunning cosmic environments</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>NFT Marketplace:</strong> Trade unique digital assets</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Virtual Events:</strong> Community gatherings and concerts</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Land Ownership:</strong> Build and customize your space</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Avatar Customization:</strong> Express your cosmic identity</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-gradient">
+                                <i class="fas fa-vr-cardboard me-2"></i>Explore SerpoVerse
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAO Governance -->
+                <div class="tab-pane fade" id="dao" role="tabpanel">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="utility-image-wrapper">
+                                <div class="glow-effect-large"></div>
+                                <i class="fas fa-vote-yea utility-icon-large"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <h2 class="gradient-text mb-4">
+                                <i class="fas fa-vote-yea me-2"></i>DAO Governance
+                            </h2>
+                            <p class="lead mb-4">
+                                Every Serpo Coin holder becomes part of the Serpo Council, the governing community 
+                                that votes on missions, partnerships, and ecosystem upgrades.
+                            </p>
+                            <p class="mb-4">
+                                True decentralization means true democracy. Your voice matters in shaping the future 
+                                of our civilization.
+                            </p>
+                            
+                            <div class="feature-list mb-4">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Proposal System:</strong> Submit ideas for community vote</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Voting Rights:</strong> 1 SERPO = 1 vote power</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Treasury Management:</strong> Community controls funds</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Development Roadmap:</strong> Vote on feature priorities</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Partnership Approval:</strong> Community vets all collaborations</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-gradient">
+                                <i class="fas fa-gavel me-2"></i>Join the Council
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cross-Chain Portal -->
+                <div class="tab-pane fade" id="portal" role="tabpanel">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                            <div class="utility-image-wrapper">
+                                <div class="glow-effect-large"></div>
+                                <i class="fas fa-project-diagram utility-icon-large"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                            <h2 class="gradient-text mb-4">
+                                <i class="fas fa-project-diagram me-2"></i>Cross-Chain Portal
+                            </h2>
+                            <p class="lead mb-4">
+                                Connecting TON Network to other major blockchains — enabling Serpo Coin to travel 
+                                beyond its origin chain.
+                            </p>
+                            <p class="mb-4">
+                                Integrate into games, metaverses, and new Web3 applications across multiple ecosystems.
+                            </p>
+                            
+                            <div class="feature-list mb-4">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Bridge Technology:</strong> Seamless cross-chain transfers</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Multi-Chain Support:</strong> Ethereum, BSC, Polygon & more</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Wrapped Tokens:</strong> Maintain liquidity everywhere</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>DeFi Integration:</strong> Access protocols on any chain</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Secure & Fast:</strong> Military-grade encryption</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-gradient">
+                                <i class="fas fa-exchange-alt me-2"></i>Bridge Assets
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Partnerships -->
+                <div class="tab-pane fade" id="partnerships" role="tabpanel">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="utility-image-wrapper">
+                                <div class="glow-effect-large"></div>
+                                <i class="fas fa-handshake utility-icon-large"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <h2 class="gradient-text mb-4">
+                                <i class="fas fa-handshake me-2"></i>Global & Local Business Partnerships
+                            </h2>
+                            <p class="lead mb-4">
+                                Serpo opens space for local and international businesses to integrate with our ecosystem.
+                            </p>
+                            <p class="mb-4">
+                                This partnership layer turns Serpo into a real-world marketplace — linking merchants, 
+                                creators, and consumers through decentralized payment gateways.
+                            </p>
+                            
+                            <div class="feature-list mb-4">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Merchant Integration:</strong> Accept SERPO as payment</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Advertising Platform:</strong> Promote to crypto audience</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Loyalty Programs:</strong> Reward customers with crypto/NFTs</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>E-commerce Support:</strong> Sell electronics, fashion, art & food</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-cyan me-2"></i>
+                                    <span><strong>Global Reach:</strong> Connect with customers worldwide</span>
+                                </div>
+                            </div>
+
+                            <a href="contact.html" class="btn btn-gradient">
+                                <i class="fas fa-briefcase me-2"></i>Become a Partner
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Knowledge & Creation Fund -->
+                <div class="tab-pane fade" id="fund" role="tabpanel">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                            <div class="utility-image-wrapper">
+                                <div class="glow-effect-large"></div>
+                                <i class="fas fa-lightbulb utility-icon-large"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                            <h2 class="gradient-text mb-4">
+                                <i class="fas fa-lightbulb me-2"></i>Knowledge & Creation Fund
+                            </h2>
+                            <p class="lead mb-4">
+                                A global fund supporting developers, artists, and entrepreneurs who contribute 
+                                to Serpo's expansion through apps, content, or educational tools.
+                            </p>
+                            <p class="mb-4">
+                                We believe in empowering creators and innovators. The Creation Fund provides grants, 
+                                resources, and support to those building our ecosystem.
+                            </p>
+                            
+                            <div class="feature-list mb-4">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Developer Grants:</strong> Funding for ecosystem dApps</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Artist Support:</strong> Commissions for NFT creators</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Educational Programs:</strong> Tutorials and documentation</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Community Proposals:</strong> Apply through DAO governance</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-yellow me-2"></i>
+                                    <span><strong>Transparent Allocation:</strong> All grants publicly tracked</span>
+                                </div>
+                            </div>
+
+                            <a href="contact.html" class="btn btn-gradient">
+                                <i class="fas fa-paper-plane me-2"></i>Apply for Grant
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cosmic-footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand mb-3">
+                        <img src="assets/images/logo.png" alt="Serpo Coin" class="footer-logo me-2">
+                        <span class="brand-text">SERPO COIN</span>
+                    </div>
+                    <p class="text-light">
+                        A cosmic legend reborn in Web3. Building a self-evolving digital civilization on the TON network.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="text-cyan mb-3">Explore</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="utilities.html">Utilities</a></li>
+                        <li><a href="tokenomics.html">Tokenomics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="text-cyan mb-3">Community</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Whitepaper</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="text-cyan mb-3">Connect With Us</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+                    </div>
+                    <p class="small text-light mb-0">Join our cosmic community and help build the future of Web3.</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-light">
+                        &copy; 2025 Serpo Coin. A signal from the stars, reborn through the blockchain.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

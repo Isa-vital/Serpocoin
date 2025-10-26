@@ -1,0 +1,103 @@
+[
+  {
+    "phase": "Phase 1: Genesis",
+    "timeline": "Q1 2025",
+    "status": "completed",
+    "icon": "fas fa-rocket",
+    "description": "Launch foundation and establish the Serpo community. Build initial infrastructure and deploy smart contracts on TON network.",
+    "milestones": [
+      "Smart contract deployment on TON network",
+      "Official launch on Blum Meme Pad",
+      "Contract renunciation for community ownership",
+      "Initial liquidity pool creation",
+      "Social media channels launch (Twitter, Telegram, Discord)",
+      "Website and whitepaper release",
+      "Community airdrops and rewards program initiation"
+    ]
+  },
+  {
+    "phase": "Phase 2: Community Building",
+    "timeline": "Q2 2025",
+    "status": "in-progress",
+    "icon": "fas fa-users",
+    "description": "Expand the Serpo ecosystem and grow the community. Launch initial utilities and establish governance structure.",
+    "milestones": [
+      "Serpo Council DAO governance launch",
+      "First community voting proposals",
+      "Partnership announcements with Web3 projects",
+      "CMC and CoinGecko listings",
+      "Staking program implementation",
+      "NFT collection release (Serpo Citizens)",
+      "Ambassador program launch",
+      "10,000+ holder milestone"
+    ]
+  },
+  {
+    "phase": "Phase 3: Utility Expansion",
+    "timeline": "Q3 2025",
+    "status": "upcoming",
+    "icon": "fas fa-tools",
+    "description": "Deploy core utilities including Serpo Wallet and begin SerpoVerse development. Activate merchant partnerships.",
+    "milestones": [
+      "Serpo Wallet beta release (P2P trading)",
+      "Gamification and energy reward system",
+      "SerpoVerse alpha launch (3D metaverse)",
+      "Virtual land sale in SerpoVerse",
+      "First merchant partnerships activated",
+      "Payment gateway integration",
+      "Mobile app development begins",
+      "Cross-chain bridge development"
+    ]
+  },
+  {
+    "phase": "Phase 4: Cross-Chain Integration",
+    "timeline": "Q4 2025",
+    "status": "upcoming",
+    "icon": "fas fa-network-wired",
+    "description": "Activate cross-chain portal and expand to multiple blockchain networks. Scale merchant and business partnerships.",
+    "milestones": [
+      "Cross-chain portal activation",
+      "Bridge to Ethereum, BSC, and Polygon",
+      "Wrapped SERPO tokens on multiple chains",
+      "DeFi protocol integrations",
+      "Global merchant network expansion",
+      "100+ business partnerships",
+      "Loyalty program launches with partners",
+      "SerpoVerse full public release"
+    ]
+  },
+  {
+    "phase": "Phase 5: Global Adoption",
+    "timeline": "Q1 2026",
+    "status": "upcoming",
+    "icon": "fas fa-globe-americas",
+    "description": "Scale globally with real-world integrations. Launch Knowledge & Creation Fund and establish Serpo as a mainstream Web3 platform.",
+    "milestones": [
+      "Knowledge & Creation Fund activation",
+      "Developer grant program launch",
+      "Artist and creator support initiatives",
+      "Major exchange listings (CEX)",
+      "International expansion in Asia, Europe, Americas",
+      "Real-world payment adoption at scale",
+      "Educational platform launch",
+      "Serpo ecosystem marketplace"
+    ]
+  },
+  {
+    "phase": "Phase 6: Evolution & Beyond",
+    "timeline": "Q2 2026+",
+    "status": "upcoming",
+    "icon": "fas fa-infinity",
+    "description": "Continuous innovation driven by the community. Explore new technologies, partnerships, and use cases as voted by the Serpo Council.",
+    "milestones": [
+      "AI integration for Serpo Wallet",
+      "Advanced metaverse experiences",
+      "Gaming integrations and Play-to-Earn",
+      "DAO-governed expansion proposals",
+      "New utility development based on community votes",
+      "Strategic partnerships with major brands",
+      "Serpo Foundation establishment",
+      "Long-term sustainability initiatives"
+    ]
+  }
+]
