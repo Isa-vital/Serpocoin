@@ -51,6 +51,16 @@
 </IfModule>
 
 # ================================
+# MIME TYPES
+# ================================
+
+<IfModule mod_mime.c>
+    AddType application/json .json
+    AddType application/javascript .js
+    AddType text/css .css
+</IfModule>
+
+# ================================
 # CACHE CONTROL
 # ================================
 

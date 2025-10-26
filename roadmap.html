@@ -45,7 +45,7 @@
             <div class="row min-vh-50 align-items-center">
                 <div class="col-lg-8 mx-auto text-center">
                     <h1 class="display-2 fw-bold gradient-text mb-3" data-aos="fade-up">
-                        <i class="fas fa-map-marked-alt me-3"></i>Roadmap
+                       Roadmap
                     </h1>
                     <p class="lead text-cyan" data-aos="fade-up" data-aos-delay="200">
                         The Journey to Building a Cosmic Civilization
@@ -55,10 +55,142 @@
         </div>
     </section>
 
-    <section class="roadmap-section py-5">
+    <section class="roadmap-section py-5" style="background-color: #0a0e27; min-height: 100vh;">
         <div class="container">
-            <div class="roadmap-timeline" id="roadmap-container">
+            <!-- Roadmap Visual -->
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="content-card" data-aos="fade-up" style="background: rgba(15, 23, 42, 0.8); padding: 2rem; border-radius: 15px;">
+                        <h2 class="text-center gradient-text mb-4" style="color: #00ffff;">
+                            <i class="fas fa-rocket me-2"></i>Our Journey Through The Stars
+                        </h2>
+                        <p class="text-center text-light mb-4" style="color: #ffffff;">
+                            From awakening to beyond the stars, follow the Serpo Coin roadmap as we build the future of Web3.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Detailed Timeline (from JSON) -->
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center text-cyan mb-5" data-aos="fade-up" style="color: #00ffff;">
+                        Detailed Milestones
+                    </h3>
+                </div>
+            </div>
+            <div class="roadmap-timeline" id="roadmap-container" style="display: block; visibility: visible;">
                 <!-- Roadmap items will be loaded dynamically from roadmap.json -->
+                <!-- Static fallback content -->
+                <div class="roadmap-item completed" data-aos="fade-right" style="display: flex; margin-bottom: 3rem; opacity: 1; visibility: visible;">
+                    <div class="roadmap-icon" style="width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, #00ffff 0%, #ffd700 100%); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #000; flex-shrink: 0; box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <div class="roadmap-content" style="margin-left: 2rem; flex: 1; background: rgba(15, 23, 42, 0.8); border-radius: 15px; padding: 2rem; border: 1px solid rgba(0, 255, 255, 0.1); color: #ffffff;">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <span class="badge bg-success mb-2">COMPLETED</span>
+                                <h3 class="gradient-text mb-2" style="color: #00ffff;">Phase 1: Awakening</h3>
+                                <p class="text-yellow mb-2 fst-italic" style="color: #ffd700;">"The Signal Has Been Received"</p>
+                                <p class="text-cyan mb-0" style="color: #00ffff;"><i class="fas fa-calendar-alt me-2"></i>Q4 2024</p>
+                            </div>
+                        </div>
+                        <p class="mb-3" style="color: #ffffff;">The genesis of Serpo Coin begins with the first transmission.</p>
+                        <h5 class="text-yellow mb-3" style="color: #ffd700;"><i class="fas fa-tasks me-2"></i>Key Milestones:</h5>
+                        <ul class="custom-list" style="list-style: none; padding-left: 0; color: #ffffff;">
+                            <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #ffffff;">Launch - Serpo Coin on TON or Solana</li>
+                            <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #ffffff;">Airdrop - First Contact NFTs to early supporters</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item in-progress" data-aos="fade-left">
+                    <div class="roadmap-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <span class="badge bg-primary mb-2">IN PROGRESS</span>
+                                <h3 class="gradient-text mb-2">Phase 2: Interstellar Economy</h3>
+                                <p class="text-yellow mb-2 fst-italic">"Building the Serpo Gateway"</p>
+                                <p class="text-cyan mb-0"><i class="fas fa-calendar-alt me-2"></i>Q1 2025</p>
+                            </div>
+                        </div>
+                        <p class="mb-3 text-white">Creating the infrastructure for the cosmic economy.</p>
+                        <h5 class="text-yellow mb-3"><i class="fas fa-tasks me-2"></i>Key Milestones:</h5>
+                        <ul class="custom-list">
+                            <li>Create - Serpo Wallet with gamified interface and energy points for holding tokens</li>
+                            <li>Add token staking - To power the Serpo beacon</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item upcoming" data-aos="fade-right">
+                    <div class="roadmap-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <span class="badge bg-warning mb-2">UPCOMING</span>
+                                <h3 class="gradient-text mb-2">Phase 3: The Portal Network</h3>
+                                <p class="text-yellow mb-2 fst-italic">"Earth and Serpo now linked"</p>
+                                <p class="text-cyan mb-0"><i class="fas fa-calendar-alt me-2"></i>Q2 2025</p>
+                            </div>
+                        </div>
+                        <p class="mb-3 text-white">Bridging worlds through advanced blockchain technology.</p>
+                        <h5 class="text-yellow mb-3"><i class="fas fa-tasks me-2"></i>Key Milestones:</h5>
+                        <ul class="custom-list">
+                            <li>Bridge - Serpo Coin with other blockchains using interchain communication</li>
+                            <li>Partnerships - Small time games or metaverses using Serpo Coin as currency</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item upcoming" data-aos="fade-left">
+                    <div class="roadmap-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <span class="badge bg-warning mb-2">UPCOMING</span>
+                                <h3 class="gradient-text mb-2">Phase 4: The Serpo Civilization</h3>
+                                <p class="text-yellow mb-2 fst-italic">"The Council Has Formed"</p>
+                                <p class="text-cyan mb-0"><i class="fas fa-calendar-alt me-2"></i>Q3 2025</p>
+                            </div>
+                        </div>
+                        <p class="mb-3 text-white">Community governance takes center stage.</p>
+                        <h5 class="text-yellow mb-3"><i class="fas fa-tasks me-2"></i>Key Milestones:</h5>
+                        <ul class="custom-list">
+                            <li>DAO governance - Token holders vote as Serpo Council Members</li>
+                            <li>SerpoVerse - 3D virtual colony where holders showcase NFTs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item upcoming" data-aos="fade-right">
+                    <div class="roadmap-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <span class="badge bg-warning mb-2">UPCOMING</span>
+                                <h3 class="gradient-text mb-2">Phase 5: Beyond The Stars</h3>
+                                <p class="text-yellow mb-2 fst-italic">"The Journey Continues Beyond Space"</p>
+                                <p class="text-cyan mb-0"><i class="fas fa-calendar-alt me-2"></i>Q4 2025 & Beyond</p>
+                            </div>
+                        </div>
+                        <p class="mb-3 text-white">Expanding into new frontiers and creating lasting impact.</p>
+                        <h5 class="text-yellow mb-3"><i class="fas fa-tasks me-2"></i>Key Milestones:</h5>
+                        <ul class="custom-list">
+                            <li>Launch educational fund - Supporting space exploration and Web3 education initiatives</li>
+                            <li>Community-driven evolution - The community decides the next chapter of Serpo's journey</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -117,6 +249,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/roadmap.js"></script>
+    <!-- <script src="assets/js/roadmap.js"></script> Temporarily commented to test static content -->
 </body>
 </html>

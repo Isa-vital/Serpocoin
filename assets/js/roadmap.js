@@ -10,17 +10,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Fetch roadmap data
     fetch('data/roadmap.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log('Roadmap data loaded:', data);
             renderRoadmap(data);
             animateRoadmap();
         })
         .catch(error => {
             console.error('Error loading roadmap:', error);
-            roadmapContainer.innerHTML = '<p class="text-center text-muted">Unable to load roadmap data.</p>';
+            roadmapContainer.innerHTML = `
+                <div class="text-center text-light p-5">
+                    <i class="fas fa-exclamation-triangle fa-3x mb-3 text-warning"></i>
+                    <p>Unable to load roadmap data.</p>
+                    <p class="small text-light">Error: ${error.message}</p>
+                </div>
+            `;
         });
 
     function renderRoadmap(roadmapData) {
+        // Clear container only after successful data load
         roadmapContainer.innerHTML = '';
         
         roadmapData.forEach((item, index) => {
@@ -28,6 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
             roadmapItem.className = `roadmap-item ${item.status}`;
             roadmapItem.setAttribute('data-aos', index % 2 === 0 ? 'fade-right' : 'fade-left');
             roadmapItem.setAttribute('data-aos-delay', index * 100);
+            roadmapItem.style.display = 'flex';
+            roadmapItem.style.marginBottom = '3rem';
+            roadmapItem.style.opacity = '1';
+            roadmapItem.style.visibility = 'visible';
             
             roadmapItem.innerHTML = `
                 <div class="roadmap-icon">
@@ -38,19 +55,22 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div>
                             <span class="badge ${getStatusBadgeClass(item.status)} mb-2">${item.status.replace('-', ' ').toUpperCase()}</span>
                             <h3 class="gradient-text mb-2">${item.phase}</h3>
+                            ${item.subtitle ? `<p class="text-yellow mb-2 fst-italic">"${item.subtitle}"</p>` : ''}
                             <p class="text-cyan mb-0"><i class="fas fa-calendar-alt me-2"></i>${item.timeline}</p>
                         </div>
                     </div>
-                    <p class="mb-3">${item.description}</p>
-                    <h5 class="text-purple mb-3"><i class="fas fa-tasks me-2"></i>Key Milestones:</h5>
+                    <p class="mb-3 text-white">${item.description}</p>
+                    <h5 class="text-yellow mb-3"><i class="fas fa-tasks me-2"></i>Key Milestones:</h5>
                     <ul class="custom-list">
-                        ${item.milestones.map(milestone => `<li>${milestone}</li>`).join('')}
+                        ${item.milestones.map(milestone => `<li style="color: #ffffff;">${milestone}</li>`).join('')}
                     </ul>
                 </div>
             `;
             
             roadmapContainer.appendChild(roadmapItem);
         });
+        
+        console.log('Roadmap items rendered:', roadmapData.length);
     }
 
     function getStatusBadgeClass(status) {

@@ -467,6 +467,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.5rem 0;
     padding-left: 1.5rem;
     position: relative;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .custom-list li::before {
@@ -665,6 +666,23 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
     padding: 2rem;
     border: 1px solid rgba(0, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.roadmap-content h3 {
+    color: #ffffff;
+}
+
+.roadmap-content p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.roadmap-content h5 {
+    color: #ffd700;
+}
+
+.roadmap-content ul {
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .roadmap-item.completed .roadmap-icon {

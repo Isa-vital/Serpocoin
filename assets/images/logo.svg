@@ -1,81 +1,168 @@
-<!-- Serpo Coin Logo Placeholder - SVG -->
+<!-- Serpo Coin - Royal Alien with Gold Coin Logo -->
 <svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background Circle -->
-  <circle cx="250" cy="250" r="240" fill="url(#bgGradient)" opacity="0.2"/>
-  
-  <!-- Outer Glow Ring -->
-  <circle cx="250" cy="250" r="200" fill="none" stroke="url(#glowGradient)" stroke-width="3" opacity="0.6">
-    <animate attributeName="r" values="200;210;200" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite"/>
-  </circle>
-  
-  <!-- Main Planet/Coin Circle -->
-  <circle cx="250" cy="250" r="150" fill="url(#planetGradient)" stroke="url(#borderGradient)" stroke-width="5"/>
-  
-  <!-- Planet Rings -->
-  <ellipse cx="250" cy="250" rx="220" ry="80" fill="none" stroke="url(#ringGradient)" stroke-width="8" opacity="0.4" transform="rotate(-20 250 250)"/>
-  <ellipse cx="250" cy="250" rx="220" ry="80" fill="none" stroke="url(#ringGradient)" stroke-width="4" opacity="0.3" transform="rotate(-25 250 250)"/>
-  
-  <!-- Inner Glow -->
-  <circle cx="250" cy="250" r="120" fill="url(#innerGlow)" opacity="0.5"/>
-  
-  <!-- SERPO Text -->
-  <text x="250" y="240" font-family="Orbitron, Arial, sans-serif" font-size="60" font-weight="900" fill="url(#textGradient)" text-anchor="middle">SERPO</text>
-  <text x="250" y="280" font-family="Inter, Arial, sans-serif" font-size="18" fill="#00ffff" text-anchor="middle" opacity="0.8">COSMIC COIN</text>
-  
-  <!-- Stars -->
-  <circle cx="80" cy="80" r="3" fill="#00ffff" opacity="0.8">
-    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="420" cy="100" r="2" fill="#9d4edd" opacity="0.7">
-    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="100" cy="400" r="2.5" fill="#4361ee" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="400" cy="380" r="3" fill="#00ffff" opacity="0.9">
-    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  
-  <!-- Gradients -->
+  <!-- Gradients Definitions -->
   <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4361ee;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#9d4edd;stop-opacity:1" />
-    </linearGradient>
-    
-    <linearGradient id="planetGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#4361ee;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#7209b7;stop-opacity:1" />
-    </linearGradient>
-    
-    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#9d4edd;stop-opacity:1" />
-    </linearGradient>
-    
-    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#9d4edd;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#00ffff;stop-opacity:1" />
-    </linearGradient>
-    
-    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.8" />
-      <stop offset="50%" style="stop-color:#9d4edd;stop-opacity:0.6" />
-      <stop offset="100%" style="stop-color:#00ffff;stop-opacity:0.8" />
-    </linearGradient>
-    
-    <radialGradient id="innerGlow">
-      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#00ffff;stop-opacity:0" />
+    <!-- Dark Background Gradient -->
+    <radialGradient id="bgGradient" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#1a2f1a;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#0d1f0d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
     </radialGradient>
     
-    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#9d4edd;stop-opacity:1" />
+    <!-- Gold Coin Gradient -->
+    <radialGradient id="coinGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#fffbea;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#daa520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Gold Glow -->
+    <radialGradient id="goldGlow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#ffd700;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Alien Skin Gradient (olive/green) -->
+    <linearGradient id="alienSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b9e6f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6b7c54;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a5638;stop-opacity:1" />
     </linearGradient>
+    
+    <!-- Crown Gold Gradient -->
+    <linearGradient id="crownGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff9c4;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#ffb300;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8f00;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Eye Glow -->
+    <radialGradient id="eyeGlow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#ffeb3b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffd700;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:0.5" />
+    </radialGradient>
   </defs>
+  
+  <!-- Dark Background -->
+  <rect width="500" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- Coin Glow Effect (left side) -->
+  <circle cx="180" cy="200" r="100" fill="url(#goldGlow)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.8;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Gold Coin (left side, floating) -->
+  <g transform="translate(180, 200)">
+    <!-- Outer coin ring -->
+    <circle r="75" fill="url(#coinGradient)" stroke="#b8860b" stroke-width="3"/>
+    
+    <!-- Coin inner details (circular pattern) -->
+    <circle r="70" fill="none" stroke="#ff8f00" stroke-width="1" opacity="0.4"/>
+    <circle r="65" fill="none" stroke="#daa520" stroke-width="0.5" opacity="0.3"/>
+    
+    <!-- Alien face symbol on coin -->
+    <ellipse cy="-5" rx="20" ry="28" fill="#daa520" opacity="0.6"/>
+    <ellipse cx="-8" cy="-8" rx="6" ry="10" fill="#b8860b"/>
+    <ellipse cx="8" cy="-8" rx="6" ry="10" fill="#b8860b"/>
+    <path d="M -5 10 Q 0 12 5 10" fill="none" stroke="#b8860b" stroke-width="1"/>
+    
+    <!-- Coin shine -->
+    <ellipse cx="-20" cy="-20" rx="15" ry="20" fill="#ffffff" opacity="0.3"/>
+  </g>
+  
+  <!-- Alien Head (right side) -->
+  <g transform="translate(320, 200)">
+    <!-- Head shape -->
+    <ellipse cy="0" rx="65" ry="85" fill="url(#alienSkin)" stroke="#4a5638" stroke-width="2"/>
+    
+    <!-- Head highlights -->
+    <ellipse cx="-20" cy="-30" rx="25" ry="35" fill="#a8b894" opacity="0.3"/>
+    
+    <!-- Large alien eyes -->
+    <ellipse cx="-20" cy="-5" rx="18" ry="28" fill="#2c3e2c" stroke="#1a1a1a" stroke-width="1"/>
+    <ellipse cx="20" cy="-5" rx="18" ry="28" fill="#2c3e2c" stroke="#1a1a1a" stroke-width="1"/>
+    
+    <!-- Eye glow/reflection -->
+    <ellipse cx="-20" cy="-5" rx="12" ry="18" fill="url(#eyeGlow)" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="20" cy="-5" rx="12" ry="18" fill="url(#eyeGlow)" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <!-- Eye highlights -->
+    <ellipse cx="-23" cy="-12" rx="4" ry="6" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="17" cy="-12" rx="4" ry="6" fill="#ffffff" opacity="0.8"/>
+    
+    <!-- Nose -->
+    <ellipse cx="-3" cy="20" rx="1.5" ry="2" fill="#3a4628"/>
+    <ellipse cx="3" cy="20" rx="1.5" ry="2" fill="#3a4628"/>
+    
+    <!-- Subtle mouth -->
+    <path d="M -10 35 Q 0 38 10 35" fill="none" stroke="#3a4628" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Neck/shoulders suggestion -->
+    <ellipse cy="85" rx="50" ry="20" fill="url(#alienSkin)" opacity="0.7"/>
+  </g>
+  
+  <!-- Crown on alien head -->
+  <g transform="translate(320, 100)">
+    <!-- Crown base -->
+    <path d="M -45 20 L -35 -15 L -20 10 L 0 -20 L 20 10 L 35 -15 L 45 20 Z" 
+          fill="url(#crownGold)" stroke="#b8860b" stroke-width="2"/>
+    
+    <!-- Crown details -->
+    <rect x="-40" y="18" width="80" height="8" fill="url(#crownGold)" stroke="#b8860b" stroke-width="1"/>
+    
+    <!-- Crown jewels (red gems) -->
+    <ellipse cx="-25" cy="5" rx="4" ry="5" fill="#c41e3a" stroke="#8b0000" stroke-width="0.5"/>
+    <ellipse cx="0" cy="5" rx="4" ry="5" fill="#c41e3a" stroke="#8b0000" stroke-width="0.5"/>
+    <ellipse cx="25" cy="5" rx="4" ry="5" fill="#c41e3a" stroke="#8b0000" stroke-width="0.5"/>
+    
+    <!-- Crown ornaments (spheres on peaks) -->
+    <circle cx="-35" cy="-15" r="5" fill="url(#crownGold)" stroke="#b8860b" stroke-width="1"/>
+    <circle cx="-20" cy="10" r="4" fill="url(#crownGold)" stroke="#b8860b" stroke-width="1"/>
+    <circle cx="0" cy="-20" r="6" fill="url(#crownGold)" stroke="#b8860b" stroke-width="1">
+      <animate attributeName="r" values="6;7;6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="20" cy="10" r="4" fill="url(#crownGold)" stroke="#b8860b" stroke-width="1"/>
+    <circle cx="35" cy="-15" r="5" fill="url(#crownGold)" stroke="#b8860b" stroke-width="1"/>
+    
+    <!-- Crown highlights -->
+    <ellipse cx="0" cy="15" rx="30" ry="3" fill="#fffbea" opacity="0.4"/>
+  </g>
+  
+  <!-- SERPO COIN Text -->
+  <text x="250" y="410" font-family="Orbitron, Impact, Arial Black, sans-serif" font-size="52" font-weight="900" 
+        fill="url(#crownGold)" text-anchor="middle" letter-spacing="2">SERPO COIN</text>
+  <text x="250" y="410" font-family="Orbitron, Impact, Arial Black, sans-serif" font-size="52" font-weight="900" 
+        fill="none" stroke="#b8860b" stroke-width="1" text-anchor="middle" letter-spacing="2">SERPO COIN</text>
+  
+  <!-- Subtitle -->
+  <text x="250" y="440" font-family="Georgia, serif, Arial" font-size="16" font-weight="400" 
+        fill="#daa520" text-anchor="middle" letter-spacing="3">BEYOND EARTH FINANCE</text>
+  
+  <!-- Decorative star (bottom right) -->
+  <g transform="translate(460, 470)">
+    <path d="M 0 -15 L -3 -3 L -15 0 L -3 3 L 0 15 L 3 3 L 15 0 L 3 -3 Z" 
+          fill="url(#crownGold)" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" 
+                        from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Ambient sparkles -->
+  <circle cx="100" cy="120" r="2" fill="#ffd700" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="420" cy="280" r="1.5" fill="#ffd700" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="350" r="1.5" fill="#daa520" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
 </svg>
