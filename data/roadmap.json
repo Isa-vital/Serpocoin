@@ -7,8 +7,11 @@
     "icon": "fas fa-satellite-dish",
     "description": "The genesis of Serpo Coin begins with the first transmission.",
     "milestones": [
-      "Launch - Serpo Coin on TON or Solana",
-      "Airdrop - First Contact NFTs to early supporters"
+      "Launch Serpo Coin on TON blockchain",
+      "Airdrops & NFT rewards for early buyers and supporters",
+      "Bonding Curve model introduced for gradual token price growth",
+      "DEX Listings to enable decentralized trading",
+      "Web3 Wallet Listings (TON Wallet, Trust Wallet, WalletConnect, etc.)"
     ]
   },
   {
@@ -16,23 +19,27 @@
     "subtitle": "Building the Serpo Gateway",
     "timeline": "Q1 2025",
     "status": "in-progress",
-    "icon": "fas fa-globe",
-    "description": "Creating the infrastructure for the cosmic economy.",
+    "icon": "fas fa-robot",
+    "description": "Creating the infrastructure for the cosmic economy with AI assistance and storytelling.",
     "milestones": [
-      "Create - Serpo Wallet with gamified interface and energy points for holding tokens",
-      "Add token staking - To power the Serpo beacon"
+      "Development of Serpo AI - Smart assistant helping traders analyze markets",
+      "AI offers technical analysis, sentiment tracking, and crypto research tools",
+      "Serpo Animation Storyline launched for community engagement and brand lore",
+      "Infrastructure setup for DAO, metaverse, and marketplace systems"
     ]
   },
   {
     "phase": "Phase 3: The Portal Network",
-    "subtitle": "Earth and Serpo now linked",
+    "subtitle": "Earth and Serpo Now Linked",
     "timeline": "Q2 2025",
     "status": "upcoming",
-    "icon": "fas fa-project-diagram",
-    "description": "Bridging worlds through advanced blockchain technology.",
+    "icon": "fas fa-shopping-bag",
+    "description": "Bridging worlds through cross-chain technology and real-world commerce.",
     "milestones": [
-      "Bridge - Serpo Coin with other blockchains using interchain communication",
-      "Partnerships - Small time games or metaverses using Serpo Coin as currency"
+      "Bridge Serpo Coin with other blockchains (cross-chain interoperability)",
+      "Global & Local Business Partnerships for advertising and crypto payments",
+      "Serpo Marketplace — 'The AstroBazaar' - Multi-item market (phones, clothes, shoes, NFTs, food)",
+      "Partnerships with Small Games & 3D Web Apps - Integrate Serpo Coin as utility token"
     ]
   },
   {
@@ -41,10 +48,13 @@
     "timeline": "Q3 2025",
     "status": "upcoming",
     "icon": "fas fa-users",
-    "description": "Community governance takes center stage.",
+    "description": "Community governance and immersive digital experiences take center stage.",
     "milestones": [
-      "DAO governance - Token holders vote as Serpo Council Members",
-      "SerpoVerse - 3D virtual colony where holders showcase NFTs"
+      "SerpoVerse Launch - A 3D virtual colony for users, creators, and DAO members",
+      "Serpo Wallet + P2P Trading - Integrated wallet system for swaps, staking, and transfers",
+      "DAO Governance (Serpo Council) - Three ranks: Observers, Envoys, and Elders",
+      "Members vote on proposals and ecosystem upgrades",
+      "Community & NFT Hubs inside the SerpoVerse"
     ]
   },
   {
@@ -53,10 +63,11 @@
     "timeline": "Q4 2025 & Beyond",
     "status": "upcoming",
     "icon": "fas fa-rocket",
-    "description": "Expanding into new frontiers and creating lasting impact.",
+    "description": "Expanding into new frontiers with major listings and continuous evolution.",
     "milestones": [
-      "Launch educational fund - Supporting space exploration and Web3 education initiatives",
-      "Community-driven evolution - The community decides the next chapter of Serpo's journey"
+      "Major Exchange Listings (CEX)",
+      "DAO-Driven Upgrades - Council votes shape future policies",
+      "Ecosystem Evolution - Scaling AI tools, marketplaces, and metaverse expansion"
     ]
   }
 ]

@@ -39,10 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
         roadmapData.forEach((item, index) => {
             const roadmapItem = document.createElement('div');
             roadmapItem.className = `roadmap-item ${item.status}`;
-            roadmapItem.setAttribute('data-aos', index % 2 === 0 ? 'fade-right' : 'fade-left');
+            roadmapItem.setAttribute('data-aos', 'fade-up');
             roadmapItem.setAttribute('data-aos-delay', index * 100);
-            roadmapItem.style.display = 'flex';
-            roadmapItem.style.marginBottom = '3rem';
+            roadmapItem.style.display = 'grid';
             roadmapItem.style.opacity = '1';
             roadmapItem.style.visibility = 'visible';
             
@@ -50,19 +49,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="roadmap-icon">
                     <i class="${item.icon}"></i>
                 </div>
+                <div class="roadmap-timeline-date">
+                    <span class="phase-number">${item.phase.split(':')[0]}</span>
+                    <span><i class="fas fa-calendar-alt me-2"></i>${item.timeline}</span>
+                </div>
                 <div class="roadmap-content">
-                    <div class="d-flex justify-content-between align-items-start mb-3">
-                        <div>
-                            <span class="badge ${getStatusBadgeClass(item.status)} mb-2">${item.status.replace('-', ' ').toUpperCase()}</span>
-                            <h3 class="gradient-text mb-2">${item.phase}</h3>
-                            ${item.subtitle ? `<p class="text-yellow mb-2 fst-italic">"${item.subtitle}"</p>` : ''}
-                            <p class="text-cyan mb-0"><i class="fas fa-calendar-alt me-2"></i>${item.timeline}</p>
-                        </div>
+                    <div class="mb-3">
+                        <span class="badge ${getStatusBadgeClass(item.status)} mb-2">${item.status.replace('-', ' ').toUpperCase()}</span>
+                        <h3>${item.phase.split(':')[1] || item.phase}</h3>
+                        ${item.subtitle ? `<p class="subtitle">"${item.subtitle}"</p>` : ''}
                     </div>
-                    <p class="mb-3 text-white">${item.description}</p>
-                    <h5 class="text-yellow mb-3"><i class="fas fa-tasks me-2"></i>Key Milestones:</h5>
+                    <p class="mb-3">${item.description}</p>
+                    <h5><i class="fas fa-tasks me-2"></i>Key Milestones:</h5>
                     <ul class="custom-list">
-                        ${item.milestones.map(milestone => `<li style="color: #ffffff;">${milestone}</li>`).join('')}
+                        ${item.milestones.map(milestone => `<li>${milestone}</li>`).join('')}
                     </ul>
                 </div>
             `;

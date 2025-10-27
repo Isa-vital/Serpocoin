@@ -10,30 +10,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const ctx = chartCanvas.getContext('2d');
     
-    // Chart data
+    // Chart data - Matching the image layout
     const data = {
         labels: [
-            'Community & Airdrops (40%)',
-            'Liquidity & Staking (30%)',
-            'Partnerships & Merchants (15%)',
-            'Ecosystem Development (15%)'
+            'Community & Airdrops',
+            'Liquidity & Staking',
+            'Partnerships & Merchants'
         ],
         datasets: [{
-            data: [40, 30, 15, 15],
+            data: [25, 60, 15],
             backgroundColor: [
-                'rgba(0, 255, 255, 0.8)',
-                'rgba(157, 78, 221, 0.8)',
-                'rgba(65, 97, 238, 0.8)',
-                'rgba(255, 107, 53, 0.8)'
+                '#00D9FF', // Cyan
+                '#FF6B53', // Coral/Orange
+                '#9D4EDD'  // Purple
             ],
             borderColor: [
-                'rgba(0, 255, 255, 1)',
-                'rgba(157, 78, 221, 1)',
-                'rgba(65, 97, 238, 1)',
-                'rgba(255, 107, 53, 1)'
+                '#00D9FF',
+                '#FF6B53',
+                '#9D4EDD'
             ],
-            borderWidth: 2,
-            hoverOffset: 20
+            borderWidth: 3,
+            hoverOffset: 15,
+            spacing: 2
         }]
     };
 
@@ -44,6 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
         options: {
             responsive: true,
             maintainAspectRatio: true,
+            layout: {
+                padding: 10
+            },
             plugins: {
                 legend: {
                     display: true,
@@ -51,33 +52,58 @@ document.addEventListener('DOMContentLoaded', function() {
                     labels: {
                         color: '#e0e7ff',
                         font: {
-                            size: 14,
-                            family: 'Inter'
+                            size: 15,
+                            family: 'Inter',
+                            weight: '600'
                         },
                         padding: 20,
                         usePointStyle: true,
-                        pointStyle: 'circle'
+                        pointStyle: 'circle',
+                        boxWidth: 12,
+                        boxHeight: 12,
+                        generateLabels: function(chart) {
+                            const data = chart.data;
+                            return data.labels.map((label, i) => ({
+                                text: `${label} (${data.datasets[0].data[i]}%)`,
+                                fillStyle: data.datasets[0].backgroundColor[i],
+                                hidden: false,
+                                index: i
+                            }));
+                        }
                     }
                 },
                 tooltip: {
-                    backgroundColor: 'rgba(10, 14, 39, 0.95)',
+                    backgroundColor: 'rgba(10, 14, 39, 0.98)',
                     titleColor: '#00ffff',
                     bodyColor: '#e0e7ff',
-                    borderColor: 'rgba(0, 255, 255, 0.5)',
-                    borderWidth: 1,
+                    borderColor: 'rgba(0, 217, 255, 0.6)',
+                    borderWidth: 2,
                     padding: 15,
                     displayColors: true,
+                    titleFont: {
+                        size: 16,
+                        weight: 'bold'
+                    },
+                    bodyFont: {
+                        size: 14
+                    },
                     callbacks: {
                         label: function(context) {
-                            return context.label + ': ' + context.parsed + '%';
+                            const percentage = context.parsed;
+                            return ` ${percentage}% of Total Supply`;
                         },
                         footer: function(tooltipItems) {
                             const total = 1000000000;
                             const percentage = tooltipItems[0].parsed;
                             const tokens = (total * percentage / 100).toLocaleString();
-                            return 'Tokens: ' + tokens + ' SERPO';
+                            return '\n' + tokens + ' SERPO';
                         }
-                    }
+                    },
+                    footerFont: {
+                        size: 13,
+                        weight: 'bold'
+                    },
+                    footerColor: '#00ffff'
                 }
             },
             animation: {
@@ -86,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 duration: 2000,
                 easing: 'easeInOutQuart'
             },
-            cutout: '60%'
+            cutout: '65%'
         }
     };
 

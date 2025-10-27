@@ -111,8 +111,8 @@
             <div class="row mb-5">
                 <div class="col-lg-10 mx-auto">
                     <div class="distribution-card" data-aos="fade-up">
-                        <h2 class="gradient-text text-center mb-5">Token Distribution</h2>
-                        <div class="row align-items-center">
+                        <h2 class="gradient-text text-center mb-5">Token Allocation & Holder Breakdown</h2>
+                        <div class="row align-items-center mb-5">
                             <div class="col-lg-6 mb-4 mb-lg-0">
                                 <canvas id="tokenomicsChart"></canvas>
                             </div>
@@ -123,44 +123,110 @@
                                             <span class="fw-bold">
                                                 <i class="fas fa-users text-cyan me-2"></i>Community & Airdrops
                                             </span>
-                                            <span class="badge bg-cyan">40%</span>
+                                            <span class="badge bg-cyan">25%</span>
                                         </div>
                                         <div class="progress mb-3">
-                                            <div class="progress-bar bg-cyan" style="width: 40%"></div>
+                                            <div class="progress-bar bg-cyan" style="width: 25%"></div>
                                         </div>
                                     </div>
                                     <div class="distribution-item">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
                                             <span class="fw-bold">
-                                                <i class="fas fa-water text-yellow me-2"></i>Liquidity & Staking
+                                                <i class="fas fa-water" style="color: #ff6347;" me-2></i>Liquidity & Staking
                                             </span>
-                                            <span class="badge bg-yellow">30%</span>
+                                            <span class="badge" style="background: #ff6347;">60%</span>
                                         </div>
                                         <div class="progress mb-3">
-                                            <div class="progress-bar bg-yellow" style="width: 30%"></div>
+                                            <div class="progress-bar" style="width: 60%; background: #ff6347;"></div>
                                         </div>
                                     </div>
                                     <div class="distribution-item">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
                                             <span class="fw-bold">
-                                                <i class="fas fa-handshake text-blue me-2"></i>Partnerships & Merchants
+                                                <i class="fas fa-handshake" style="color: #9d4edd;" me-2></i>Partnerships & Merchants
                                             </span>
-                                            <span class="badge bg-blue">15%</span>
+                                            <span class="badge" style="background: #9d4edd;">15%</span>
                                         </div>
                                         <div class="progress mb-3">
-                                            <div class="progress-bar" style="width: 15%; background: #4169e1;"></div>
+                                            <div class="progress-bar" style="width: 15%; background: #9d4edd;"></div>
                                         </div>
                                     </div>
-                                    <div class="distribution-item">
-                                        <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span class="fw-bold">
-                                                <i class="fas fa-tools text-orange me-2"></i>Ecosystem Development
-                                            </span>
-                                            <span class="badge" style="background: #ff6b35;">15%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h3 class="text-cyan text-center mb-4">Holder Breakdown</h3>
+                            <div class="row g-3">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="holder-card">
+                                        <div class="holder-rank">#1</div>
+                                        <div class="holder-icon">
+                                            <i class="fas fa-swimming-pool"></i>
                                         </div>
-                                        <div class="progress mb-3">
-                                            <div class="progress-bar" style="width: 15%; background: #ff6b35;"></div>
+                                        <h5 class="mt-3">Liquidity Pool Wallet</h5>
+                                        <div class="holder-percentage">30%</div>
+                                        <div class="progress mt-2" style="height: 6px;">
+                                            <div class="progress-bar" style="width: 30%; background: linear-gradient(90deg, #00ffff, #4361ee);"></div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="holder-card">
+                                        <div class="holder-rank">#2</div>
+                                        <div class="holder-icon">
+                                            <i class="fas fa-parachute-box"></i>
+                                        </div>
+                                        <h5 class="mt-3">Airdrop Distribution Wallet</h5>
+                                        <div class="holder-percentage">25%</div>
+                                        <div class="progress mt-2" style="height: 6px;">
+                                            <div class="progress-bar" style="width: 25%; background: linear-gradient(90deg, #00ffff, #4361ee);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="holder-card">
+                                        <div class="holder-rank">#3</div>
+                                        <div class="holder-icon">
+                                            <i class="fas fa-handshake"></i>
+                                        </div>
+                                        <h5 class="mt-3">Marketing & Partnership Wallet</h5>
+                                        <div class="holder-percentage">15%</div>
+                                        <div class="progress mt-2" style="height: 6px;">
+                                            <div class="progress-bar" style="width: 15%; background: linear-gradient(90deg, #9d4edd, #c77dff);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="holder-card">
+                                        <div class="holder-rank">#4</div>
+                                        <div class="holder-icon">
+                                            <i class="fas fa-flag"></i>
+                                        </div>
+                                        <h5 class="mt-3">Ecosystem Development Wallet</h5>
+                                        <div class="holder-percentage">15%</div>
+                                        <div class="progress mt-2" style="height: 6px;">
+                                            <div class="progress-bar" style="width: 15%; background: linear-gradient(90deg, #4361ee, #7209b7);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="holder-card">
+                                        <div class="holder-rank">#5</div>
+                                        <div class="holder-icon">
+                                            <i class="fas fa-user-astronaut"></i>
+                                        </div>
+                                        <h5 class="mt-3">Top Holder (User Wallet)</h5>
+                                        <div class="holder-percentage">5%</div>
+                                        <div class="progress mt-2" style="height: 6px;">
+                                            <div class="progress-bar" style="width: 5%; background: linear-gradient(90deg, #ffd700, #ff6b35);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="alert" style="background: rgba(0, 255, 255, 0.1); border: 1px solid rgba(0, 255, 255, 0.3); color: #00ffff;">
+                                        <i class="fas fa-info-circle me-2"></i>
+                                        <strong>Token contract is fully renounced</strong> — no wallet has administrative control.
                                     </div>
                                 </div>
                             </div>
@@ -232,8 +298,8 @@
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <div class="footer-brand mb-3">
-                        <img src="assets/images/logo.png" alt="Serpo Coin" class="footer-logo me-2">
-                        <span class="brand-text">SERPO COIN</span>
+                      <img src="assets/images/WhatsApp Image 2025-10-26 at 16.10.41_5a2d7090.jpg" alt="Serpo Coin" class="footer-logo me-2">
+                      <span class="brand-text">SERPO COIN</span>
                     </div>
                     <p class="text-light">A cosmic legend reborn in Web3. Building a self-evolving digital civilization on the TON network.</p>
                 </div>
@@ -258,11 +324,7 @@
                 <div class="col-lg-4 col-md-4 mb-4">
                     <h5 class="text-cyan mb-3">Connect With Us</h5>
                     <div class="social-links mb-3">
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+                        <a href="http://tiktok.com/@serpocoinofficioal" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>`n                        <a href="https://t.me/serpocoinchannel" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-telegram"></i></a>`n                        <a href="https://www.instagram.com/serpocoin?utm_source=qr&igsh=MWdwdnV3ZnhuNWdlNQ==" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>`n                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>`n                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
                     </div>
                     <p class="small text-light mb-0">Join our cosmic community and help build the future of Web3.</p>
                 </div>
@@ -281,5 +343,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/tokenomics-chart.js"></script>
+    <script src="assets/js/chatbot.js"></script>
 </body>
 </html>
