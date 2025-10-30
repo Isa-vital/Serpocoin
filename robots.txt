@@ -1,0 +1,16 @@
+# Serpo Coin - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://serpocoin.com/sitemap.xml
+
+# Disallow admin and config directories
+Disallow: /assets/php/
+Disallow: /.git/
+Disallow: /config/
+
+# Allow CSS and JS files for proper indexing
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/

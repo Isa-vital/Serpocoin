@@ -2,8 +2,8 @@
   {
     "phase": "Phase 1: Awakening",
     "subtitle": "The Signal Has Been Received",
-    "timeline": "Q4 2024",
-    "status": "completed",
+    "timeline": "",
+    "status": "in-progress",
     "icon": "fas fa-satellite-dish",
     "description": "The genesis of Serpo Coin begins with the first transmission.",
     "milestones": [
@@ -11,14 +11,15 @@
       "Airdrops & NFT rewards for early buyers and supporters",
       "Bonding Curve model introduced for gradual token price growth",
       "DEX Listings to enable decentralized trading",
-      "Web3 Wallet Listings (TON Wallet, Trust Wallet, WalletConnect, etc.)"
+      "Web3 Wallet Listings (Binance Web3, OKX Web3, and other exchanges)",
+      "Buy directly from STON.fi pool"
     ]
   },
   {
     "phase": "Phase 2: Interstellar Economy",
     "subtitle": "Building the Serpo Gateway",
-    "timeline": "Q1 2025",
-    "status": "in-progress",
+    "timeline": "",
+    "status": "upcoming",
     "icon": "fas fa-robot",
     "description": "Creating the infrastructure for the cosmic economy with AI assistance and storytelling.",
     "milestones": [
@@ -31,7 +32,7 @@
   {
     "phase": "Phase 3: The Portal Network",
     "subtitle": "Earth and Serpo Now Linked",
-    "timeline": "Q2 2025",
+    "timeline": "",
     "status": "upcoming",
     "icon": "fas fa-shopping-bag",
     "description": "Bridging worlds through cross-chain technology and real-world commerce.",
@@ -39,13 +40,14 @@
       "Bridge Serpo Coin with other blockchains (cross-chain interoperability)",
       "Global & Local Business Partnerships for advertising and crypto payments",
       "Serpo Marketplace — 'The AstroBazaar' - Multi-item market (phones, clothes, shoes, NFTs, food)",
-      "Partnerships with Small Games & 3D Web Apps - Integrate Serpo Coin as utility token"
+      "Partnerships with Small Games & 3D Web Apps - Integrate Serpo Coin as utility token",
+      "Serpo Academy - Educational platform for all service providers through classes and courses, with Serpo Coin as payment method"
     ]
   },
   {
     "phase": "Phase 4: The Serpo Civilization",
     "subtitle": "The Council Has Formed",
-    "timeline": "Q3 2025",
+    "timeline": "",
     "status": "upcoming",
     "icon": "fas fa-users",
     "description": "Community governance and immersive digital experiences take center stage.",
@@ -60,7 +62,7 @@
   {
     "phase": "Phase 5: Beyond The Stars",
     "subtitle": "The Journey Continues Beyond Space",
-    "timeline": "Q4 2025 & Beyond",
+    "timeline": "",
     "status": "upcoming",
     "icon": "fas fa-rocket",
     "description": "Expanding into new frontiers with major listings and continuous evolution.",
