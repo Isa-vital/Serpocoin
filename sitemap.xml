@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- Home Page -->
+    <url>
+        <loc>https://serpocoin.io/</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- About Page -->
+    <url>
+        <loc>https://serpocoin.io/about.html</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Vision Page -->
+    <url>
+        <loc>https://serpocoin.io/vision.html</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Utilities Page -->
+    <url>
+        <loc>https://serpocoin.io/utilities.html</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Tokenomics Page -->
+    <url>
+        <loc>https://serpocoin.io/tokenomics.html</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Roadmap Page -->
+    <url>
+        <loc>https://serpocoin.io/roadmap.html</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Academy Page -->
+    <url>
+        <loc>https://serpocoin.io/academy.html</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Team Page -->
+    <url>
+        <loc>https://serpocoin.io/team.html</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://serpocoin.io/contact.html</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+</urlset>

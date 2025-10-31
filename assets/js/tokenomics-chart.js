@@ -10,24 +10,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const ctx = chartCanvas.getContext('2d');
     
-    // Chart data - Matching the image layout
+    // Chart data - Matching the updated token allocation
     const data = {
         labels: [
             'Community & Airdrops',
-            'Liquidity & Staking',
-            'Partnerships & Merchants'
+            'Partnerships & Merchants',
+            'Future System Upgrades',
+            'Creator Wallet'
         ],
         datasets: [{
-            data: [25, 60, 15],
+            data: [0.5, 2, 2, 1],
             backgroundColor: [
                 '#00D9FF', // Cyan
+                '#9D4EDD', // Purple
                 '#FF6B53', // Coral/Orange
-                '#9D4EDD'  // Purple
+                '#FFD700'  // Gold
             ],
             borderColor: [
                 '#00D9FF',
+                '#9D4EDD',
                 '#FF6B53',
-                '#9D4EDD'
+                '#FFD700'
             ],
             borderWidth: 3,
             hoverOffset: 15,
