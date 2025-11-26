@@ -60,7 +60,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top cosmic-nav">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/images/logo.svg" alt="Serpo Coin" class="logo-img me-2" onerror="this.onerror=null; this.src='assets/images/logo.png';">
+                <img src="assets/images/logo.svg" alt="Serpo Coin" class="logo-img me-2" onerror="this.style.display='none'">
                 <span class="brand-text">SERPO</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -68,17 +68,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="vision.html">Vision</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="utilities.html">Utilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html">Live Chart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="utilities.html">Utilities</a></li>
                     <li class="nav-item"><a class="nav-link" href="tokenomics.html">Tokenomics</a></li>
                     <li class="nav-item"><a class="nav-link" href="roadmap.html">Roadmap</a></li>
                     <li class="nav-item"><a class="nav-link" href="academy.html">Academy</a></li>
                     <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <a href="https://t.me/blum/app?startapp=memepadjetton_SERPO_EwcpK-ref_4L1Sobk05X" class="btn btn-gradient ms-3">Buy SERPO</a>
+                <a href="buy.html" class="btn btn-gradient ms-lg-3">
+                    <i class="fas fa-shopping-cart me-2"></i>Buy SERPO
+                </a>
             </div>
         </div>
     </nav>
@@ -474,7 +476,7 @@
                     <h5 class="text-cyan mb-3">Explore</h5>
                     <ul class="list-unstyled footer-links">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="vision.html">Live Chart</a></li>
                         <li><a href="utilities.html">Utilities</a></li>
                         <li><a href="tokenomics.html">Tokenomics</a></li>
                     </ul>
@@ -525,5 +527,93 @@
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/chatbot.js"></script>
-</body>
+    
+    
+    <!-- Telegram Community Chat Widget -->
+    <script>
+        (function() {
+            // Create Telegram chat button
+            const telegramChat = document.createElement(''div'');
+            telegramChat.className = ''telegram-chat-widget'';
+            telegramChat.innerHTML = `
+                <a href="https://t.me/serpocoinchannel" target="_blank" rel="noopener noreferrer" class="telegram-chat-btn" title="Join our Telegram community">
+                    <i class="fab fa-telegram"></i>
+                    <span class="chat-text">Join Community</span>
+                </a>
+            `;
+            document.body.appendChild(telegramChat);
+        })();
+    </script>
+
+    <style>
+        .telegram-chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9998;
+        }
+
+        .telegram-chat-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 25px;
+            background: linear-gradient(135deg, #0088cc 0%, #00aced 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 136, 204, 0.4);
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 1rem;
+            animation: telegram-pulse 2s ease-in-out infinite;
+        }
+
+        .telegram-chat-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(0, 136, 204, 0.6);
+            color: white;
+        }
+
+        .telegram-chat-btn i {
+            font-size: 1.5rem;
+        }
+
+        @keyframes telegram-pulse {
+            0%, 100% {
+                box-shadow: 0 4px 20px rgba(0, 136, 204, 0.4);
+            }
+            50% {
+                box-shadow: 0 4px 30px rgba(0, 136, 204, 0.8);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .telegram-chat-widget {
+                bottom: 90px;
+                right: 20px;
+            }
+
+            .telegram-chat-btn {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+
+            .chat-text {
+                display: none;
+            }
+
+            .telegram-chat-btn i {
+                font-size: 1.8rem;
+            }
+
+            .telegram-chat-btn {
+                width: 55px;
+                height: 55px;
+                padding: 0;
+                justify-content: center;
+                border-radius: 50%;
+            }
+        }
+    </style></body>
 </html>

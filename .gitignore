@@ -1,11 +1,13 @@
+# Composer dependencies
+vendor/
+composer.lock
+
 # Database files (keep database.sql for setup)
 # Only ignore if you don't want to share DB structure
 *.sql
-*.php
 
-# Sensitive PHP config (keep contact.php but remove credentials before pushing)
-# contact.php with real API keys should not be pushed
-# You may want to create contact.php.example instead
+# Sensitive PHP config
+# contact.php is tracked but .env contains sensitive data
 
 # Node modules
 node_modules/
