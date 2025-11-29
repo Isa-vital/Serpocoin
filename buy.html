@@ -32,6 +32,32 @@
   <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
     
+    <!-- Critical Security Alert CSS (Inline fallback) -->
+    <style>
+        .security-alert-banner {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%) !important;
+            border-bottom: 2px solid #fbbf24 !important;
+            padding: 0 !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            z-index: 1050 !important;
+            animation: slideDown 0.5s ease-out !important;
+        }
+        .security-alert-content { padding: 1rem 0 !important; }
+        .alert-icon { font-size: 1.5rem !important; color: #fbbf24 !important; }
+        .alert-title { font-size: 1.1rem !important; font-weight: 700 !important; color: #fbbf24 !important; margin-bottom: 0.25rem !important; }
+        .alert-message { font-size: 0.95rem !important; color: #fff !important; margin-bottom: 0.5rem !important; line-height: 1.5 !important; }
+        .alert-links { display: flex !important; flex-wrap: wrap !important; gap: 1rem !important; margin-top: 0.5rem !important; }
+        .alert-link { color: #fbbf24 !important; text-decoration: none !important; font-size: 0.85rem !important; }
+        .alert-link:hover { color: #fcd34d !important; text-decoration: underline !important; }
+        .alert-close { background: rgba(255, 255, 255, 0.1) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; color: #fff !important; padding: 0.5rem 1rem !important; border-radius: 5px !important; cursor: pointer !important; font-size: 0.85rem !important; }
+        .alert-close:hover { background: rgba(255, 255, 255, 0.2) !important; }
+        @keyframes slideDown { from { transform: translateY(-100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes slideUp { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-100%); opacity: 0; } }
+    </style>
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/WhatsApp Image 2025-10-26 at 16.10.41_5a2d7090.jpg">
 </head>
@@ -64,6 +90,46 @@
             </div>
         </div>
     </nav>
+
+    <!-- Security Alert Banner -->
+    <div class="security-alert-banner" id="securityAlert">
+        <div class="container">
+            <div class="security-alert-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-10">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="alert-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="alert-title">🚨 SECURITY WARNING</div>
+                                <div class="alert-message">
+                                    <strong>Beware of fraudulent listings.</strong> An unauthorized project on Blum is using the SerpoCoin brand without permission. This is NOT official SerpoCoin and is NOT endorsed by our team. Always verify the contract address below before purchasing.
+                                    <br><strong>Official Contract:</strong> <code style="color: #fbbf24; background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 3px; font-size: 0.85rem;">EQCPeUzKknneMlA1UbivELxd8lFUA_oaOX9m9PPc4d6lHQyw</code>
+                                </div>
+                                <div class="alert-links">
+                                    <a href="https://serpocoin.io" class="alert-link" target="_blank">
+                                        <i class="fas fa-globe"></i> Official Website
+                                    </a>
+                                    <a href="https://x.com/serpocoin" class="alert-link" target="_blank">
+                                        <i class="fab fa-twitter"></i> Verify on X
+                                    </a>
+                                    <a href="https://t.me/serpocoinchannel" class="alert-link" target="_blank">
+                                        <i class="fab fa-telegram"></i> Official Telegram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 text-end">
+                        <button class="alert-close" onclick="closeAlert()">
+                            <i class="fas fa-times me-1"></i> Dismiss
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="buy-hero py-5 mt-5">
@@ -617,6 +683,66 @@
             </a>
         `;
         document.body.appendChild(telegramChat);
+    </script>
+    
+    <!-- Security Alert Script -->
+    <script>
+        function closeAlert() {
+            const alertBanner = document.getElementById('securityAlert');
+            if (alertBanner) {
+                alertBanner.style.animation = 'slideUp 0.3s ease-out';
+                setTimeout(() => {
+                    alertBanner.style.display = 'none';
+                    sessionStorage.setItem('securityAlertDismissed', 'true');
+                    // Reset navbar position when alert is dismissed
+                    adjustLayoutForAlert(false);
+                }, 300);
+            }
+        }
+        
+        // Adjust layout based on alert visibility
+        function adjustLayoutForAlert(isVisible) {
+            const nav = document.querySelector('.cosmic-nav');
+            const buyHero = document.querySelector('.buy-hero');
+            
+            if (isVisible) {
+                if (nav) nav.style.top = '60px';
+                if (buyHero) buyHero.style.paddingTop = '160px';
+            } else {
+                if (nav) nav.style.top = '0';
+                if (buyHero) buyHero.style.paddingTop = '100px';
+            }
+        }
+        
+        // FORCE CLEAR sessionStorage to show alert (security warning is critical)
+        sessionStorage.removeItem('securityAlertDismissed');
+        
+        // Check if alert was dismissed in this session
+        document.addEventListener('DOMContentLoaded', function() {
+            const alertBanner = document.getElementById('securityAlert');
+            
+            // Small delay to ensure DOM is fully ready
+            setTimeout(() => {
+                const isDismissed = sessionStorage.getItem('securityAlertDismissed');
+                console.log('Alert dismissed status:', isDismissed);
+                console.log('Alert banner element:', alertBanner);
+                
+                if (isDismissed === 'true') {
+                    if (alertBanner) {
+                        alertBanner.style.display = 'none';
+                        adjustLayoutForAlert(false);
+                    }
+                } else {
+                    // Ensure banner is visible
+                    if (alertBanner) {
+                        alertBanner.style.display = 'block';
+                        alertBanner.style.opacity = '1';
+                        adjustLayoutForAlert(true);
+                        console.log('Alert banner should now be visible');
+                    }
+                }
+            }, 100);
+        });
     </script>
 </body>
 </html>

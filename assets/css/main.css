@@ -37,6 +37,129 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ================================
+   SECURITY ALERT BANNER
+   ================================ */
+
+.security-alert-banner {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    border-bottom: 2px solid #fbbf24;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    animation: slideDown 0.5s ease-out;
+}
+
+.security-alert-content {
+    padding: 1rem 0;
+}
+
+.alert-icon {
+    font-size: 1.5rem;
+    animation: pulse 2s infinite;
+}
+
+.alert-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-bottom: 0.25rem;
+}
+
+.alert-message {
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.alert-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.alert-link {
+    color: #fbbf24;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.alert-link:hover {
+    color: #fcd34d;
+    text-decoration: underline;
+}
+
+.alert-close {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.alert-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 768px) {
+    .alert-title {
+        font-size: 1rem;
+    }
+    .alert-message {
+        font-size: 0.85rem;
+    }
+    .alert-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* ================================
    NAVIGATION
    ================================ */
 

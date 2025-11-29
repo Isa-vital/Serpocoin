@@ -7,7 +7,11 @@
     <!-- Primary Meta Tags -->
     <title>Serpo Coin - Beyond Earth Finance | TON Blockchain Cryptocurrency</title>
     <meta name="title" content="Serpo Coin - Beyond Earth Finance | TON Blockchain Cryptocurrency">
-    <meta name="description" content="Serpo Coin is a revolutionary cryptocurrency on TON blockchain inspired by Project Serpo. Join our cosmic Web3 civilization with deflationary tokenomics, NFTs, and DeFi utilities.">
+     
+      <!--<meta name="description" content="Serpo Coin is a revolutionary cryptocurrency on TON blockchain inspired by Project Serpo. Join our cosmic Web3 civilization with deflationary tokenomics, NFTs, and DeFi utilities.">--->
+   
+    <meta name="description" content=" SerpoCoin is a DeFi Web3 token built on the TON blockchain, inspired by the legendary
+Serpo exchange — a story of connection between humans and an advanced alien civilization.">
     <meta name="keywords" content="Serpo Coin, SERPO, TON blockchain, cryptocurrency, Web3, DeFi, NFT, alien crypto, Project Serpo, meme coin, crypto token, blockchain technology, decentralized finance">
     <meta name="author" content="Serpo Coin Team">
     <meta name="robots" content="index, follow">
@@ -22,7 +26,7 @@
     <meta property="og:url" content="https://serpocoin.com/">
     <meta property="og:title" content="Serpo Coin - Beyond Earth Finance | TON Blockchain">
     <meta property="og:description" content="Join the cosmic Web3 civilization. Serpo Coin brings deflationary tokenomics, staking, NFTs and DeFi to the TON network.">
-    <meta property="og:image" content="https://serpocoin.com/assets/images/logo.svg">
+    <meta property="og:image" content="https://serpocoin.com/logo.png">
     <meta property="og:image:alt" content="Serpo Coin Logo - Alien King with Crown">
     <meta property="og:site_name" content="Serpo Coin">
     <meta property="og:locale" content="en_US">
@@ -32,7 +36,7 @@
     <meta name="twitter:url" content="https://serpocoin.com/">
     <meta name="twitter:title" content="Serpo Coin - Beyond Earth Finance">
     <meta name="twitter:description" content="Revolutionary cryptocurrency on TON blockchain inspired by Project Serpo. Join our cosmic civilization.">
-    <meta name="twitter:image" content="https://serpocoin.com/assets/images/logo.svg">
+    <meta name="twitter:image" content="https://serpocoin.com/assets/images/logo.png">
     <meta name="twitter:creator" content="@serpocoin">
     
     <!-- Favicons -->
@@ -114,11 +118,12 @@
 </head>
 <body class="bg-dark">
     
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top cosmic-nav">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/images/logo.svg" alt="Serpo Coin" class="logo-img me-2" onerror="this.style.display='none'">
+                <img src="logo.png" alt="Serpo Coin" class="logo-img me-2" onerror="this.style.display='none'">
                 <span class="brand-text">SERPO</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -153,7 +158,7 @@
                 <div class="col-lg-8 mx-auto text-center">
                     <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
                         <div class="logo-container mb-4">
-                            <img src="assets/images/WhatsApp Image 2025-10-26 at 16.10.41_5a2d7090.jpg" alt="Serpo Coin" class="hero-logo">
+                             <!-- <img src="assets/images/WhatsApp Image 2025-10-26 at 16.10.41_5a2d7090.jpg" alt="Serpo Coin" class="hero-logo">-->
                         </div>
                         <h1 class="display-1 fw-bold mb-4 gradient-text" data-aos="fade-up" data-aos-delay="200">
                             SERPO COIN
@@ -345,13 +350,12 @@
                 <div class="col-lg-4 col-md-4 mb-4">
                     <h5 class="text-cyan mb-3">Connect With Us</h5>
                     <div class="social-links mb-3">
-                        <a href="https://www.facebook.com/share/17EVzfqp9N/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/share/1BnposBFcu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook"></i></a>
                         <a href="https://youtube.com/@serpocoin?si=jYXDblPDKX-HVa17" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
                         <a href="http://tiktok.com/@serpocoinofficioal" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
                         <a href="https://t.me/serpocoinchannel" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-telegram"></i></a>
                         <a href="https://www.instagram.com/serpocoin?utm_source=qr&igsh=MWdwdnV3ZnhuNWdlNQ==" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
                         <a href="https://x.com/serpocoin?s=21" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="https://discord.gg/UzUW4Z6ek" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
                     </div>
                     <p class="small text-light mb-0">Join our cosmic community and help build the future of Web3.</p>
                 </div>
@@ -472,5 +476,31 @@
             }
         }
     </style>
+    
+     
+    <!-- Security Alert Script -->
+    <script>
+        function closeAlert() {
+            const alertBanner = document.getElementById('securityAlert');
+            if (alertBanner) {
+                alertBanner.style.animation = 'slideUp 0.3s ease-out';
+                setTimeout(() => {
+                    alertBanner.style.display = 'none';
+                    // Remember dismissal in session
+                    sessionStorage.setItem('securityAlertDismissed', 'true');
+                }, 300);
+            }
+        }
+        
+        // Check if alert was dismissed in this session
+        document.addEventListener('DOMContentLoaded', function() {
+            if (sessionStorage.getItem('securityAlertDismissed') === 'true') {
+                const alertBanner = document.getElementById('securityAlert');
+                if (alertBanner) {
+                    alertBanner.style.display = 'none';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
