@@ -434,7 +434,8 @@ h1, h2, h3, h4, h5, h6 {
 .content-card,
 .feature-card,
 .token-info-card,
-.distribution-card {
+.distribution-card,
+.burn-announcement-card {
     background: var(--card-bg);
     border-radius: 20px;
     padding: 2.5rem;
@@ -442,6 +443,55 @@ h1, h2, h3, h4, h5, h6 {
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
 }
+
+/* Burn Announcement Specific Styles */
+.burn-announcement-card {
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(153, 27, 27, 0.1) 100%);
+    border: 2px solid rgba(251, 191, 36, 0.3);
+    box-shadow: 0 0 30px rgba(251, 191, 36, 0.2);
+}
+
+.burn-announcement-card .burn-icon {
+    animation: burnPulse 2s ease-in-out infinite;
+}
+
+.burn-announcement-card .burn-icon i {
+    color: #ff6b35;
+    filter: drop-shadow(0 0 10px rgba(255, 107, 53, 0.8));
+}
+
+@keyframes burnPulse {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px rgba(255, 107, 53, 0.5));
+    }
+    50% {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.8));
+    }
+}
+
+.burn-stat-box {
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 10px;
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.burn-stat-box i {
+    font-size: 1.5rem;
+}
+
+.burn-announcement-card code {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
 
 .intro-card:hover,
 .content-card:hover,
