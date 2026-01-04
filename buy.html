@@ -29,8 +29,50 @@
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-  <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css?v=1.2">
+    
+    <!-- Inline Widget CSS Fallback -->
+    <style>
+        .ai-chat-widget {
+            position: fixed !important;
+            bottom: 20px !important;
+            right: 20px !important;
+            z-index: 1000 !important;
+        }
+        .ai-chat-widget a {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            background: linear-gradient(135deg, #4361ee 0%, #3b82f6 100%) !important;
+            color: white !important;
+            padding: 15px 25px !important;
+            border-radius: 50px !important;
+            text-decoration: none !important;
+            font-weight: 600 !important;
+            box-shadow: 0 4px 15px rgba(67, 97, 238, 0.4) !important;
+            transition: all 0.3s ease !important;
+        }
+        .telegram-chat-widget {
+            position: fixed !important;
+            bottom: 90px !important;
+            right: 20px !important;
+            z-index: 1000 !important;
+        }
+        .telegram-chat-widget a {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            background: linear-gradient(135deg, #0088cc 0%, #00acc1 100%) !important;
+            color: white !important;
+            padding: 15px 25px !important;
+            border-radius: 50px !important;
+            text-decoration: none !important;
+            font-weight: 600 !important;
+            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4) !important;
+            transition: all 0.3s ease !important;
+        }
+    </style>
     
     <!-- Critical Security Alert CSS (Inline fallback) -->
     <style>
@@ -657,8 +699,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!-- Custom JS -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/chatbot.js"></script>
+    <script src="assets/js/main.js?v=1.2"></script>
+    <script src="assets/js/chatbot.js?v=1.2"></script>
     
     <!-- Copy Contract Function -->
     <script>
@@ -670,6 +712,19 @@
                 console.error('Failed to copy: ', err);
             });
         }
+    </script>
+    
+    <!-- AI Chat Widget -->
+    <script>
+        const aiChat = document.createElement('div');
+        aiChat.className = 'ai-chat-widget';
+        aiChat.innerHTML = `
+            <a href="https://ai.serpocoin.io" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-robot"></i>
+                <span>Chat With Serpo AI</span>
+            </a>
+        `;
+        document.body.appendChild(aiChat);
     </script>
     
     <!-- Telegram Community Chat Widget -->
