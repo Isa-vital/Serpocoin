@@ -397,5 +397,32 @@
                 border-radius: 50%;
             }
         }
-    </style></body>
+    </style>
+    
+    <!-- AI Chat Widget -->
+    <script>
+        const aiChat = document.createElement('div');
+        aiChat.className = 'ai-chat-widget';
+        aiChat.innerHTML = `
+            <a href="https://ai.serpocoin.io" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-robot"></i>
+                <span>Chat With Serpo AI</span>
+            </a>
+        `;
+        document.body.appendChild(aiChat);
+    </script>
+    
+    <!-- Telegram Community Chat Widget -->
+    <script>
+        const telegramChat = document.createElement('div');
+        telegramChat.className = 'telegram-chat-widget';
+        telegramChat.innerHTML = `
+            <a href="https://t.me/serpocoinchannel" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-telegram"></i>
+                <span>Join Community</span>
+            </a>
+        `;
+        document.body.appendChild(telegramChat);
+    </script>
+</body>
 </html>

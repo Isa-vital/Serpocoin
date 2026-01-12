@@ -485,14 +485,14 @@
                             </div>
                             <div class="col-md-3 col-sm-6 mb-4">
                                 <div class="stats-box">
-                                    <div class="stats-number" style="color: #ff6b6b;">10.7M</div>
+                                    <div class="stats-number" style="color: #ff6b6b; font-size: 1.8rem;">10,673,117</div>
                                     <div class="stats-label">Tokens Burned</div>
                                     <p class="text-muted mt-2 small">Permanently removed from circulation.</p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 mb-4">
                                 <div class="stats-box">
-                                    <div class="stats-number">989.3M</div>
+                                    <div class="stats-number" style="font-size: 1.9rem;">989,326,883</div>
                                     <div class="stats-label">Total Supply</div>
                                     <p class="text-muted mt-2 small">After burn. Deflationary supply.</p>
                                 </div>
@@ -640,7 +640,7 @@
                                 <i class="fas fa-fire me-2"></i>Official Serpo Burn Completed
                             </h4>
                             <p class="mb-3">
-                                The Serpo team has successfully burned <strong>10.7M SERPO</strong> from the creator wallet.
+                                The Serpo team has successfully burned <strong>10,673,117.326 SERPO</strong> from the creator wallet.
                             </p>
                             <p class="mb-2 text-white"><strong>Sent permanently to burn address:</strong></p>
                             <div class="burn-address">
@@ -673,14 +673,14 @@
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="stats-box">
                                     <h4 class="text-yellow mb-3">Tokens Burned</h4>
-                                    <div class="stats-number" style="color: #ff6b6b;">10,700,000</div>
+                                    <div class="stats-number" style="color: #ff6b6b; font-size: 1.8rem;">10,673,117</div>
                                     <div class="stats-label">Permanently Removed</div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="stats-box">
                                     <h4 class="text-cyan mb-3">Total Supply</h4>
-                                    <div class="stats-number">989,300,000</div>
+                                    <div class="stats-number" style="font-size: 1.9rem;">989,326,883</div>
                                     <div class="stats-label">After Burn (Max - Burned)</div>
                                 </div>
                             </div>
@@ -1041,6 +1041,32 @@
                 }
             });
         });
+    </script>
+    
+    <!-- AI Chat Widget -->
+    <script>
+        const aiChat = document.createElement('div');
+        aiChat.className = 'ai-chat-widget';
+        aiChat.innerHTML = `
+            <a href="https://ai.serpocoin.io" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-robot"></i>
+                <span>Chat With Serpo AI</span>
+            </a>
+        `;
+        document.body.appendChild(aiChat);
+    </script>
+    
+    <!-- Telegram Community Chat Widget -->
+    <script>
+        const telegramChat = document.createElement('div');
+        telegramChat.className = 'telegram-chat-widget';
+        telegramChat.innerHTML = `
+            <a href="https://t.me/serpocoinchannel" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-telegram"></i>
+                <span>Join Community</span>
+            </a>
+        `;
+        document.body.appendChild(telegramChat);
     </script>
 </body>
 </html>
