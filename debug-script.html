@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Script</title>
+</head>
+<body>
+<h1>Copy and paste this into your browser console (F12) on index.html:</h1>
+<pre style="background: #f4f4f4; padding: 20px; border: 1px solid #ccc;">
+// Check if fundraising section exists
+const fundraising = document.querySelector('.fundraising-section');
+console.log('Fundraising section found:', fundraising);
+console.log('Fundraising section display:', window.getComputedStyle(fundraising).display);
+console.log('Fundraising section visibility:', window.getComputedStyle(fundraising).visibility);
+console.log('Fundraising section opacity:', window.getComputedStyle(fundraising).opacity);
+console.log('Fundraising section position:', window.getComputedStyle(fundraising).position);
+console.log('Fundraising section z-index:', window.getComputedStyle(fundraising).zIndex);
+console.log('Fundraising section offset height:', fundraising.offsetHeight);
+console.log('Fundraising section offset top:', fundraising.offsetTop);
+
+// Check what's covering it
+const rect = fundraising.getBoundingClientRect();
+console.log('Fundraising bounding rect:', rect);
+
+// Check for elements covering it
+const coveringElement = document.elementFromPoint(rect.left + rect.width/2, rect.top + rect.height/2);
+console.log('Element at center of fundraising section:', coveringElement);
+</pre>
+
+<h2>OR run this simpler check:</h2>
+<pre style="background: #f4f4f4; padding: 20px; border: 1px solid #ccc;">
+document.querySelector('.fundraising-section').style.background = 'red';
+document.querySelector('.fundraising-section').style.minHeight = '500px';
+</pre>
+</body>
+</html>
